@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Assetden | Confirm payment information</title>
+</head>
+<body>
+    <main>
+
+        <div class="container">
+
+          <!-- CREDIT CARD DESIGN STARTS HERE -->
+            <div class="card-container">
+                <div class="inner-card-container">
+                  <div class="front">
+                    <div class="image">
+                      <img src='images/chip-modern-80px.png' alt="" />
+                      <div class="card-brand">
+                          <img src="images/visa.svg" class="visa">
+                          <img src="images/mastercard.svg" class="mastercard">
+                          <img src="images/amex.svg" class="amex">
+                          <img src="images/discover.svg" class="discover">
+                          <img src="images/diners.svg" class="diners">
+                          <img src="images/jcb.svg" class="jcb">
+                      </div>
+                    </div>
+                    <div class="card-number-box">####-####-####-####</div>
+                    <div class="card-inner-text">
+                      <div class="box">
+                        <span>Card Holder</span>
+                        <div class="card-holder-name">Full Name</div>
+                      </div>
+                      <div class="box">
+                        <span>Expiry Date</span>
+                        <div class="expiry-date">MM/YY</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="stripe"></div>
+                      <div class="box">
+                        <span>cvv</span>
+                        <div class="cvv-box"></div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        
+        <!-- FORM STARTS HERE ====================================================== -->
+
+            <form action="" class="form">
+              <div class="input-box">
+                <label for="card-number">Card Number</label>
+                <input type="text" name='card-number' id='card-number' placeholder="Enter your card number" />
+                <small>error message</small>
+              </div>
+              <div class="input-box">
+                <label for="card-holder">Card Holder</label>
+                <input type="text" name='card-holder' id='card-holder' placeholder='Enter your name' />
+                <small>error message</small>
+              </div>
+              <div class="flex-div">
+                <div class="input-box">
+                  <label for="expiry-date">Expiration Date</label>
+                  <input type="text" name='expiry-date' id='expiry-date' placeholder="Enter the expiration date" />
+                  <small>error message</small>
+                </div>
+                <div class="input-box">
+                  <label for="cvv">CVV</label>
+                  <input type="text" name='cvv' id='cvv' placeholder="Enter CVV" />
+                  <small>error message</small>
+                </div>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+
+          <h1 class="final-message">Payment successfully processed. Thanks for your donation!</h1>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js" integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
