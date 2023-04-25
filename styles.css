@@ -26,6 +26,35 @@ main {
   flex-direction: column;
 }
 
+/*CSS ANIMISTA ANIMATION*/
+
+.container {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+
 .container form {
   color: #fff;
   padding: 8em 3em 3em 3em;
@@ -383,8 +412,4 @@ button:hover {
 
 }
 
-@media (max-width: 280px) {
-  .container {
-    width: 100%;
-  }
-}
+
