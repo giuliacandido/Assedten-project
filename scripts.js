@@ -189,10 +189,3 @@ cvvInput.addEventListener('mouseleave', () => {
 });
 
 
-// function isBackTrue() {
-//     if(cvv === 'focus'){
-//         cardContainer.classList.add('active')
-//     }else {
-//         cardContainer.classList.remove('active')
-//     }
-// }
